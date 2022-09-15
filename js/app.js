@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", e => {
   });
   //open file explo  
   document.getElementById("mainfile").addEventListener("click", () => {
-    document.getElementById("fichieropen").style.display = "block";
+    document.getElementById("fichieropen").style.transform = "scale(1)";
   });
   //close file explo
   document.getElementById("close").addEventListener("click", () => {
-    document.getElementById("fichieropen").style.display = "none";
+    document.getElementById("fichieropen").style.transform = "scale(0)";
   });
 });
