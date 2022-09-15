@@ -84,7 +84,7 @@ nav {
 }
 nav figure{
     width: 150px;
-    height: 150px;
+    height: 151px;
 }
 nav figure img{
     width: 100px;
@@ -99,6 +99,7 @@ nav figure figcaption{
 figure:hover{
     background-color: rgba(244, 247, 250, 0.5);
     border: solid 1px rgba(244, 247, 250, 1);
+    height: 150px;
 }
 section{
     display: block;
@@ -133,16 +134,18 @@ section nav {
 }
 section nav ul{
     display: grid;
-    grid-template-columns: repeat(3,1fr); 
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 5vh; 
 
 }
 section nav ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
+    margin: auto;
 }
+section nav ul li:hover{
+    background-color: rgba(244, 247, 250, 0.5);
+    border: solid 1px rgba(244, 247, 250, 1);
+}
+
 #close{
     position: absolute;
     top: 6px;
