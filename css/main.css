@@ -10,14 +10,14 @@ body{
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.5;
     margin: 0;
-    color: #fff;
+    color: #222;
     background-image: url(../asset/background.jpg) ;
 }
 *{
     box-sizing: border-box;
 
 }
-h1,h2,h2,figure,p,ul,ol{
+h1,h2,h2,figure,p,ul,ol,li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -31,7 +31,7 @@ a, button{
 }
 button{
     background: none;
-    color:#fff;
+    color:#222;
 
 }
 :root{
@@ -51,8 +51,7 @@ header h1 button{
     transform: scale(4);
     animation: button-pulse 2s linear infinite alternate;
     cursor: pointer;
-    border: #fff solid 1px;
-    border-radius: 15%;
+
     width: 25px;
     height: 25px;
 }
@@ -67,7 +66,6 @@ header h1 button{
         transform: scale(3);
         color: #fff;
         filter: brightness(1);
-        border: #fff solid 1px;
     }
     
 }
@@ -112,7 +110,7 @@ section{
     height: 40vw;
     z-index: -1;
     transform: scale(0);
-    /* transition: all 200ms; */
+    transition: all 200ms; 
     transform-origin: top left;
     
 }
@@ -124,19 +122,62 @@ section h2{
     border-bottom: #222 solid 0.5px;
     padding-left: 10px;
 }
+section h2 button{
+    color: #fff;
+}
+section div {
+    margin: 10px 0;
+    display: flex;
+    width: inherit;
+    
+}
+section div ul{
+    margin-left: 5%;
+    text-align: center;
+    width: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    height: min-content;
+    width: min-content;
+
+}
+section div ul li{
+    margin: 0;
+    padding: 0;
+    height: min-content;
+    width: min-content;
+}
+section div ul li button{
+    border: #222 solid 0.5px;
+    border-radius: 50%;
+}
+section div ul li button span{
+    width: 40px;
+}
+section div h3{
+    width: calc(60vw - 20%);
+    text-align: left;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0;
+    padding-left: 10px;
+    border: #222 solid 0.5px;
+    margin-right: 5%;
+   
+}
+
 section nav {
     border-left: solid 0.5px #222;
     position: relative;
     top: 0;
     left: 20%;
-    height: calc(40vw - 35px);
+    height: calc(40vw - 83px);
     width: calc(60vw - 20%);
 }
 section nav ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-top: 5vh; 
-
 }
 section nav ul li {
     margin: auto;
